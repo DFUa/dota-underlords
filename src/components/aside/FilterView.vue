@@ -2,6 +2,7 @@
   <aside>
     <ul class="list-view">
       <filter-item
+        state="alliances"
         v-for="(alliance, index) in alliances"
         :key="index"
         :valueName="alliance"
@@ -11,7 +12,8 @@
     <ul class="list-view hero-view">
       <filter-item
         objectValue="id"
-        v-for="(hero, index) in heroes"
+        state="heroes"
+        v-for="(hero, index) in checkedHero"
         :key="index"
         :valueName="hero"
         :imagePath="{
@@ -25,7 +27,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import { State, Getter, Action, Mutation } from 'vuex-class';
+import { State, Getter, Action } from 'vuex-class';
 
 import { Hero, Alliance, Field } from '@/types';
 import FilterItem from './FilterItem.vue';
@@ -40,31 +42,39 @@ export default class FilterView extends Vue {
   @State('field') public field?: Field;
   @Getter('alliances', { namespace: 'alliances' }) public alliances?: any;
   @Getter('heroes', { namespace: 'heroes' }) public heroes?: any;
+  @Getter('alliances', { namespace: 'field' }) public checkedAlliances?: string[];
 
   @Action('addAlliance', {namespace: 'field'})
   public addAlliance!: (alliance: string) => void;
   @Action('removeAlliance', {namespace: 'field'})
   public removeAlliance!: (alliance: string) => void;
   @Action('addHero', {namespace: 'field'})
-  public addHero!: (alliance: string) => void;
+  public addHero!: (hero: string) => void;
   @Action('removeHero', {namespace: 'field'})
-  public removeHero!: (alliance: string) => void;
+  public removeHero!: (hero: string) => void;
+
+  public checkedHero: Hero[] = [];
 
   public allianceUpdate(event: boolean, name: string): void {
     event ? this.addAlliance(name) : this.removeAlliance(name);
-    // this.heroList = this.heroes;
 
-    // if ( this.chekedFilter.length ) {
-    //   this.heroList = this.heroList.filter((hero: any) => {
-    //     return hero.alliance.some((alliance: string): boolean => {
-    //       return this.chekedFilter.includes(alliance);
-    //     });
-    //   });
-    // }
+    this.checkedHero = this.heroes;
+
+    if ( this.checkedAlliances!.length ) {
+      this.checkedHero = this.checkedHero.filter((hero: any) => {
+        return hero.alliance.some((alliance: string): boolean => {
+          return this.checkedAlliances!.includes(alliance);
+        });
+      });
+    }
   }
 
   public heroUpdate(event: boolean, name: any): void {
     event ? this.addHero(name) : this.removeHero(name);
+  }
+
+  public created() {
+    this.checkedHero = this.heroes;
   }
 }
 </script>
@@ -78,7 +88,7 @@ aside {
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(32px, 1fr));
     gap: 5px;
     margin-bottom: 15px;
     &.hero-view {

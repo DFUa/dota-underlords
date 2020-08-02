@@ -3,6 +3,7 @@
     <input
       type="checkbox"
       name="filter-item"
+      v-model="checked"
       :value="name"
       :id="name"
       @change="emitStatus($event.target.checked)">
@@ -14,6 +15,9 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
+import { Getter, State } from 'vuex-class';
+
+import { Field } from '@/types';
 
 @Component({
   name: 'FilterItem',
@@ -22,8 +26,12 @@ export default class FilterItem extends Vue {
   @Prop() protected valueName!: any;
   @Prop(String) protected objectValue!: string;
   @Prop() protected imagePath!: any;
+  @Prop(String) protected state!: string;
+
+  @State('field') private field?: any;
 
   private name?: string;
+  private checked: boolean = false;
 
   private createImagePath(name: string): string {
     const folder = this.imagePath.folder;
@@ -39,6 +47,11 @@ export default class FilterItem extends Vue {
   }
 
   private init() {
+    if (this.field[this.state].includes(this.valueName)) {
+      this.checked = true;
+    } else {
+      this.checked = false;
+    }
     if (this.objectValue) {
       this.name = this.valueName[this.objectValue];
     } else {
@@ -46,11 +59,11 @@ export default class FilterItem extends Vue {
     }
   }
 
-  private created() {
+  private beforeUpdate() {
     this.init();
   }
 
-  private beforeUpdate() {
+  private created() {
     this.init();
   }
 }
@@ -62,6 +75,7 @@ export default class FilterItem extends Vue {
     display: none;
     &:checked + label {
       background-color: lightcyan;
+      border-color: blue;
     }
   }
   label {

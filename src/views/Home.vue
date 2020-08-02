@@ -24,6 +24,8 @@ export default class Home extends Vue {}
 <style lang="scss">
   .content {
     padding: 0 15px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 15px;
   }
 </style>
