@@ -2,6 +2,7 @@
   <div class="content">
     <filter-view></filter-view>
     <field-view></field-view>
+    <info-view></info-view>
   </div>
 </template>
 
@@ -10,12 +11,14 @@ import { Component, Vue } from 'vue-property-decorator';
 
 import FilterView from '../components/aside/FilterView.vue';
 import FieldView from '../components/field/FieldView.vue';
+import InfoView from '../components/info/InfoView.vue';
 
 @Component({
   name: 'Home',
   components: {
     FilterView,
     FieldView,
+    InfoView,
   },
 })
 export default class Home extends Vue {}

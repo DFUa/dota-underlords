@@ -1,13 +1,6 @@
 <template>
   <div id="app">
     <header>
-      <!-- <nav>
-        <ul>
-          <li>
-            <router-link to="/">Home</router-link>
-          </li>
-        </ul>
-      </nav> -->
       header
     </header>
     <router-view />
@@ -17,6 +10,9 @@
 
 <style lang="scss">
 // general styles goes here
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;

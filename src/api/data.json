@@ -5,12 +5,6 @@
 		"alliance": ["savage", "warrior"],
 		"tier": 1
 	},
-	"arc_warden": {
-		"name": "Arc Warden",
-		"id": "arc_warden",
-		"alliance": ["primordial", "summoner"],
-		"tier": 1
-	},
 	"drow_ranger": {
 		"name": "Drow Ranger",
 		"id": "drow_ranger",
@@ -23,22 +17,10 @@
 		"alliance": ["brawny", "dragon"],
 		"tier": 1
 	},
-	"bloodseeker": {
-		"name": "Bloodseeker",
-		"id": "bloodseeker",
-		"alliance": ["blood_bound", "deadeye"],
-		"tier": 1
-	},
 	"crystal_maiden": {
 		"name": "Crystal Maiden",
 		"id": "crystal_maiden",
 		"alliance": ["human", "mage"],
-		"tier": 1
-	},
-	"razor": {
-		"name": "Razor",
-		"id": "razor",
-		"alliance": ["primordial", "mage"],
 		"tier": 1
 	},
 	"batrider": {
@@ -47,34 +29,16 @@
 		"alliance": ["troll", "knight"],
 		"tier": 1
 	},
-	"tiny": {
-		"name": "Tiny",
-		"id": "tiny",
-		"alliance": ["primordial", "warrior"],
-		"tier": 1
-	},
 	"magnus": {
 		"name": "Magnus",
 		"id": "magnus",
-		"alliance": ["savage", "druid"],
-		"tier": 1
-	},
-	"nyx_assassin": {
-		"name": "Nyx Assassin",
-		"id": "nyx_assassin",
-		"alliance": ["insect", "assassin"],
-		"tier": 1
-	},
-	"weaver": {
-		"name": "Weaver",
-		"id": "weaver",
-		"alliance": ["insect", "hunter"],
+		"alliance": ["savage", "shaman"],
 		"tier": 1
 	},
 	"venomancer": {
 		"name": "Venomancer",
 		"id": "venomancer",
-		"alliance": ["scaled", "summoner"],
+		"alliance": ["scaled", "summoner", "poisoner"],
 		"tier": 1
 	},
 	"shadow_demon": {
@@ -83,10 +47,52 @@
 		"alliance": ["heartless", "demon"],
 		"tier": 1
 	},
-	"warlock": {
-		"name": "Warlock",
-		"id": "warlock",
-		"alliance": ["blood_bound", "warlock", "healer"],
+	"antimage": {
+		"name": "Anti-Mage",
+		"id": "antimage",
+		"alliance": ["rogue", "hunter"],
+		"tier": 1
+	},
+	"bounty_hunter": {
+		"name": "Bounty Hunter",
+		"id": "bounty_hunter",
+		"alliance": ["rogue", "assassin"],
+		"tier": 1
+	},
+	"dazzle": {
+		"name": "Dazzle",
+		"id": "dazzle",
+		"alliance": ["troll", "healer", "poisoner"],
+		"tier": 1
+	},
+	"lich": {
+		"name": "Lich",
+		"id": "lich",
+		"alliance": ["fallen", "mage"],
+		"tier": 1
+	},
+	"slardar": {
+		"name": "Slardar",
+		"id": "slardar",
+		"alliance": ["scaled", "warrior"],
+		"tier": 1
+	},
+	"phantom_assassin": {
+		"name": "Phantom Assassin",
+		"id": "phantom_assassin",
+		"alliance": ["assassin", "swordsman"],
+		"tier": 1
+	},
+	"enchantress": {
+		"name": "Enchantress",
+		"id": "enchantress",
+		"alliance": ["shaman", "healer"],
+		"tier": 1
+	},
+	"vengeful_spirit": {
+		"name": "Vengeful Spirit",
+		"id": "vengeful_spirit",
+		"alliance": ["fallen", "heartless"],
 		"tier": 1
 	},
 	"bristleback": {
@@ -101,28 +107,10 @@
 		"alliance": ["vigilant", "hunter"],
 		"tier": 2
 	},
-	"dazzle": {
-		"name": "Dazzle",
-		"id": "dazzle",
-		"alliance": ["troll", "healer"],
-		"tier": 2
-	},
-	"beastmaster": {
-		"name": "Beastmaster",
-		"id": "beastmaster",
-		"alliance": ["brawny", "hunter"],
-		"tier": 2
-	},
 	"earth_spirit": {
 		"name": "Earth Spirit",
 		"id": "earth_spirit",
 		"alliance": ["spirit", "warrior"],
-		"tier": 2
-	},
-	"witch_doctor": {
-		"name": "Witch Doctor",
-		"id": "witch_doctor",
-		"alliance": ["troll", "warlock"],
 		"tier": 2
 	},
 	"legion_commander": {
@@ -134,7 +122,7 @@
 	"queen_of_pain": {
 		"name": "Queen of Pain",
 		"id": "queen_of_pain",
-		"alliance": ["demon", "assassin"],
+		"alliance": ["demon", "assassin", "poisoner"],
 		"tier": 2
 	},
 	"chaos_knight": {
@@ -149,16 +137,10 @@
 		"alliance": ["vigilant", "knight"],
 		"tier": 2
 	},
-	"ogre_magi": {
-		"name": "Ogre Magi",
-		"id": "ogre_magi",
-		"alliance": ["blood_bound", "brute", "mage"],
-		"tier": 2
-	},
 	"natures_prophet": {
 		"name": "Nature's Prophet",
 		"id": "natures_prophet",
-		"alliance": ["druid", "summoner"],
+		"alliance": ["shaman", "summoner"],
 		"tier": 2
 	},
 	"pudge": {
@@ -167,22 +149,40 @@
 		"alliance": ["heartless", "warrior"],
 		"tier": 2
 	},
-	"slardar": {
-		"name": "Slardar",
-		"id": "slardar",
-		"alliance": ["scaled", "warrior"],
-		"tier": 2
-	},
 	"storm_spirit": {
 		"name": "Storm Spirit",
 		"id": "storm_spirit",
 		"alliance": ["spirit", "mage"],
 		"tier": 2
 	},
-	"io": {
-		"name": "Io",
-		"id": "io",
-		"alliance": ["primordial", "druid"],
+	"spirit_breaker": {
+		"name": "Spirit Breaker",
+		"id": "spirit_breaker",
+		"alliance": ["brawny", "swordsman"],
+		"tier": 2
+	},
+	"juggernaut": {
+		"name": "Juggernaut",
+		"id": "juggernaut",
+		"alliance": ["brawny", "swordsman"],
+		"tier": 2
+	},
+	"kunkka": {
+		"name": "Kunkka",
+		"id": "kunkka",
+		"alliance": ["human", "warrior", "swordsman"],
+		"tier": 2
+	},
+	"meepo": {
+		"name": "Meppo",
+		"id": "meepo",
+		"alliance": ["rogue", "summoner"],
+		"tier": 2
+	},
+	"beastmaster": {
+		"name": "Beastmaster",
+		"id": "beastmaster",
+		"alliance": ["brawny", "hunter", "shaman"],
 		"tier": 3
 	},
 	"abbadon": {
@@ -197,28 +197,10 @@
 		"alliance": ["human", "knight", "healer"],
 		"tier": 3
 	},
-	"viper": {
-		"name": "Viper",
-		"id": "viper",
-		"alliance": ["dragon", "assassin"],
-		"tier": 3
-	},
-	"juggernaut": {
-		"name": "Juggernaut",
-		"id": "juggernaut",
-		"alliance": ["brawny", "warrior"],
-		"tier": 3
-	},
 	"treant_protector": {
 		"name": "Treant Protector",
 		"id": "treant_protector",
-		"alliance": ["druid", "brute"],
-		"tier": 3
-	},
-	"enigma": {
-		"name": "Enigma",
-		"id": "enigma",
-		"alliance": ["void", "primordial"],
+		"alliance": ["shaman", "healer"],
 		"tier": 3
 	},
 	"lifestealer": {
@@ -233,34 +215,16 @@
 		"alliance": ["human", "savage", "summoner"],
 		"tier": 3
 	},
-	"morphling": {
-		"name": "Morphling",
-		"id": "morphling",
-		"alliance": ["primordial", "mage"],
-		"tier": 3
-	},
-	"broodmother": {
-		"name": "Broodmother",
-		"id": "broodmother",
-		"alliance": ["insect", "warlock"],
-		"tier": 3
-	},
 	"ember_spirit": {
 		"name": "Ember Spirit",
 		"id": "ember_spirit",
-		"alliance": ["spirit", "assassin"],
+		"alliance": ["spirit", "assassin", "swordsman"],
 		"tier": 3
 	},
 	"terrorblade": {
 		"name": "Terrorblade",
 		"id": "terrorblade",
-		"alliance": ["demon", "hunter"],
-		"tier": 3
-	},
-	"shadow_fiend": {
-		"name": "Shadow Fiend",
-		"id": "shadow_fiend",
-		"alliance": ["demon", "warlock"],
+		"alliance": ["demon", "hunter", "fallen"],
 		"tier": 3
 	},
 	"shadow_shaman": {
@@ -269,10 +233,46 @@
 		"alliance": ["troll", "summoner"],
 		"tier": 3
 	},
-	"disruptor": {
-		"name": "Disruptor",
-		"id": "disruptor",
-		"alliance": ["brawny", "warlock"],
+	"alchemist": {
+		"name": "Alchemist",
+		"id": "alchemist",
+		"alliance": ["brute", "rogue", "poisoner"],
+		"tier": 3
+	},
+	"puck": {
+		"name": "Puck",
+		"id": "puck",
+		"alliance": ["dragon", "mage"],
+		"tier": 3
+	},
+	"slark": {
+		"name": "Slark",
+		"id": "slark",
+		"alliance": ["scaled", "assassin"],
+		"tier": 3
+	},
+	"spectre": {
+		"name": "Spectre",
+		"id": "spectre",
+		"alliance": ["void", "demon"],
+		"tier": 3
+	},
+	"viper": {
+		"name": "Viper",
+		"id": "viper",
+		"alliance": ["dragon", "poisoner"],
+		"tier": 4
+	},
+	"lina": {
+		"name": "Lina",
+		"id": "lina",
+		"alliance": ["human", "mage"],
+		"tier": 4
+	},
+	"pangolier": {
+		"name": "Pangolier",
+		"id": "pangolier",
+		"alliance": ["savage", "swordsman"],
 		"tier": 4
 	},
 	"doom": {
@@ -287,12 +287,6 @@
 		"alliance": ["vigilant", "hunter"],
 		"tier": 4
 	},
-	"necrophos": {
-		"name": "Necrophos",
-		"id": "necrophos",
-		"alliance": ["heartless", "warlock", "healer"],
-		"tier": 4
-	},
 	"void_spirit": {
 		"name": "Void Spirit",
 		"id": "void_spirit",
@@ -302,19 +296,13 @@
 	"lone_druid": {
 		"name": "Lone Druid",
 		"id": "lone_druid",
-		"alliance": ["savage", "druid", "summoner"],
+		"alliance": ["savage", "shaman", "summoner"],
 		"tier": 4
 	},
 	"sven": {
 		"name": "Sven",
 		"id": "sven",
-		"alliance": ["human", "scaled", "knight"],
-		"tier": 4
-	},
-	"slark": {
-		"name": "Slark",
-		"id": "slark",
-		"alliance": ["scaled", "assassin"],
+		"alliance": ["rogue", "swordsman", "knight"],
 		"tier": 4
 	},
 	"templar_assassin": {
@@ -329,11 +317,23 @@
 		"alliance": ["scaled", "warrior"],
 		"tier": 4
 	},
+	"death_prophet": {
+		"name": "Death Prophet",
+		"id": "death_prophet",
+		"alliance": ["fallen", "heartless"],
+		"tier": 4
+	},
+	"rubick": {
+		"name": "Rubick",
+		"id": "rubick",
+		"alliance": ["mage", "magus"],
+		"tier": 4
+	},
 	"keeper_of_the_light": {
 		"name": "Keeper of the Light",
 		"id": "keeper_of_the_light",
 		"alliance": ["human", "mage"],
-		"tier": 4
+		"tier": 5
 	},
 	"faceless_void": {
 		"name": "Faceless Void",
@@ -345,12 +345,6 @@
 		"name": "Dragon Knight",
 		"id": "dragon_knight",
 		"alliance": ["human", "dragon", "knight"],
-		"tier": 5
-	},
-	"lich": {
-		"name": "Lich",
-		"id": "lich",
-		"alliance": ["heartless", "mage"],
 		"tier": 5
 	},
 	"medusa": {
@@ -371,10 +365,10 @@
 		"alliance": ["troll", "warrior"],
 		"tier": 5
 	},
-	"sand_king": {
-		"name": "Sand King",
-		"id": "sand_king",
-		"alliance": ["savage", "insect"],
+	"wraith_king": {
+		"name": "Wraith King",
+		"id": "wraith_king",
+		"alliance": ["fallen", "swordsman"],
 		"tier": 5
 	}
 }

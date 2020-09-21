@@ -1,5 +1,4 @@
 // models
-
 export interface Hero {
   name: string;
   id: string;
@@ -17,4 +16,7 @@ export interface Alliance {
 export interface Field {
   heroes: Hero[];
   alliances: string[];
+  colors: {
+    [key: string]: string,
+  };
 }

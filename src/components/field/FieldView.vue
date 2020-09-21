@@ -10,7 +10,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import { State} from 'vuex-class';
+import { State } from 'vuex-class';
 
 import { Field } from '@/types';
 import FieldItem from './FieldItem.vue';

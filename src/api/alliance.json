@@ -2,8 +2,8 @@
   "heartless": {
     "units_per_level": 2,
     "level_count": 3,
-    "alliance_info": "All Enemies lose [4, 8, 15] Armor",
-    "level_info": ["All Enemies lose 4 Armor", "All Enemies lose 8 Armor", "All Enemies lose 15 Armor"]
+    "alliance_info": "All Enemies lose [4, 9, 15] Armor",
+    "level_info": ["All Enemies lose 4 Armor", "All Enemies lose 9 Armor", "All Enemies lose 15 Armor"]
   },
   "brute": {
     "units_per_level": 2,
@@ -14,11 +14,17 @@
       "Whenever a Brute attacks an enemy it applies a 60% damage debuff for 4 seconds. When the debuff is initially applied it deals 150 damage. Brutes prefer to attack enemies that do not have the debuff."
     ]
   },
+  "magus": {
+    "units_per_level": 1,
+    "level_count": 1,
+    "alliance_info": "Once per battle, when a Magus unit's health drops below 50%, the unit becomes invulnerable and unable to attack for 3 seconds.",
+    "level_info": ["Once per battle, when a Magus unit's health drops below 50%, the unit becomes invulnerable and unable to attack for 3 seconds."]
+  },
   "warrior": {
     "units_per_level": 3,
     "level_count": 2,
-    "alliance_info": "All Warriors gain +[9, 19] Armor",
-    "level_info": ["All Warriors gain +9 Armor" ,"All Warriors gain +19 Armor"]
+    "alliance_info": "All Warriors gain +[10, 25] Armor",
+    "level_info": ["All Warriors gain +10 Armor" ,"All Warriors gain +25 Armor"]
   },
   "demon": {
     "units_per_level": 1,
@@ -31,11 +37,11 @@
   "savage": {
     "units_per_level": 2,
     "level_count": 3,
-    "alliance_info": "[Allied Savage units, Allied Savage units and all allied summons, All allied units] gain +[5, 8, 10] Attack Damage each time they land an attack.",
+    "alliance_info": "[Allied Savage units, Allied Savage units and all allied summons, All allied units] gain +[5, 8, 13] Attack Damage each time they land an attack.",
     "level_info": [
       "Allied Savage units gain +5 Attack Damage each time they land an attack.",
       "Allied Savage units and all allied summons gain +8 Attack Damage each time they land an attack.",
-      "All allied units gain +10 Attack Damage each time they land an attack."
+      "All allied units gain +13 Attack Damage each time they land an attack."
     ]
   },
   "dragon": {
@@ -44,50 +50,26 @@
     "alliance_info": "All Dragon units unlock an additional draconic ability.",
     "level_info": ["All Dragon units unlock an additional draconic ability."]
   },
-  "druid": {
-    "units_per_level": 2,
-    "level_count": 2,
-    "alliance_info": "At the beginning of combat, [1, 2] lowest star ally Druids are upgraded a level.",
-    "level_info": [
-      "At the beginning of combat, 1 lowest star ally Druids are upgraded a level.",
-      "At the beginning of combat, 2 lowest star ally Druids are upgraded a level."
-    ]
-  },
   "spirit": {
     "units_per_level": 3,
     "level_count": 1,
-    "alliance_info": "When a Spirit casts an ability they enter a charged state. When 3 Spirits are in a charged state they perform the forbidden technique of the triangular Delta Slam, each dealing 200 magic damage to all enemies caught inside and applying their elemental effects.",
-    "level_info": ["When a Spirit casts an ability they enter a charged state. When 3 Spirits are in a charged state they perform the forbidden technique of the triangular Delta Slam, each dealing 200 magic damage to all enemies caught inside and applying their elemental effects."]
+    "alliance_info": "When a Spirit casts an ability they enter a charged state. When 3 Spirits are in a charged state they perform the forbidden technique of the triangular Delta Slam, each dealing 130 magic damage to all enemies caught inside and applying their elemental effects for 1.5 seconds. Damage and effect duration are multiplied by 1.5 at 2 stars and 2 at 3 stars",
+    "level_info": ["When a Spirit casts an ability they enter a charged state. When 3 Spirits are in a charged state they perform the forbidden technique of the triangular Delta Slam, each dealing 130 magic damage to all enemies caught inside and applying their elemental effects for 1.5 seconds. Damage and effect duration are multiplied by 1.5 at 2 stars and 2 at 3 stars"]
   },
   "summoner": {
     "units_per_level": 3,
-    "level_count": 1,
+    "level_count": 2,
     "alliance_info": "Allied summoned units gain +[20, 40]% damage.",
     "level_info": ["Allied summoned units gain +20% damage.", "Allied summoned units gain +40% damage."]
-  },
-  "insect": {
-    "units_per_level": 2,
-    "level_count": 2,
-    "alliance_info": "Spiderlings constantly swarm enemies from the edge of the board. They are untargetable units that deal low damage and die if they take any damage. Enemies bitten by them have a [20, 40]% chance to miss attacks for 0.5 seconds. Spiderlings replenish on death to a maximum of [6, 12].",
-    "level_info": [
-      "Spiderlings constantly swarm enemies from the edge of the board. They are untargetable units that deal low damage and die if they take any damage. Enemies bitten by them have a 20% chance to miss attacks for 0.5 seconds. Spiderlings replenish on death to a maximum of 6.",
-      "Spiderlings constantly swarm enemies from the edge of the board. They are untargetable units that deal low damage and die if they take any damage. Enemies bitten by them have a 40% chance to miss attacks for 0.5 seconds. Spiderlings replenish on death to a maximum of 12."
-    ]
-  },
-  "blood_bound": {
-    "units_per_level": 2,
-    "level_count": 1,
-    "alliance_info": "When a Blood-Bound unit dies, all Blood-Bound units gain +125 Attack Damage.",
-    "level_info": ["When a Blood-Bound unit dies, all Blood-Bound units gain +125 Attack Damage."]
   },
   "knight": {
     "units_per_level": 2,
     "level_count": 3,
-    "alliance_info": "Knight units take [15, 19, 23]% less physical and magical damage. If attacked from the front, and near the allied Knight, Knight units take an additional [15, 19, 23]% less physical and magical damage.",
+    "alliance_info": "Knight units take [15, 20, 25]% less physical and magical damage. If attacked from the front, and near the allied Knight, Knight units take an additional [15, 19, 23]% less physical and magical damage.",
     "level_info": [
       "Knight units take 15% less physical and magical damage. If attacked from the front, and near the allied Knight, Knight units take an additional 15% less physical and magical damage.",
-      "Knight units take 19% less physical and magical damage. If attacked from the front, and near the allied Knight, Knight units take an additional 19% less physical and magical damage.",
-      "Knight units take 23% less physical and magical damage. If attacked from the front, and near the allied Knight, Knight units take an additional 23% less physical and magical damage."
+      "Knight units take 20% less physical and magical damage. If attacked from the front, and near the allied Knight, Knight units take an additional 19% less physical and magical damage.",
+      "Knight units take 25% less physical and magical damage. If attacked from the front, and near the allied Knight, Knight units take an additional 23% less physical and magical damage."
     ]
   },
   "scaled": {
@@ -112,6 +94,15 @@
     "alliance_info": "Enemies take [35, 70]% more Magic damage",
     "level_info": ["Enemies take 35% more Magic damage", "Enemies take 70% more Magic damage"]
   },
+  "swordsman": {
+    "units_per_level": 3,
+    "level_count": 2,
+    "alliance_info": "Each Swordsman unit gains +[10, 25]% bonus damage for each enemy unit adjacent to it.",
+    "level_info": [
+      "Each Swordsman unit gains +10% bonus damage for each enemy unit adjacent to it.",
+      "Each Swordsman unit gains +25% bonus damage for each enemy unit adjacent to it."
+    ]
+  },
   "hunter": {
     "units_per_level": 3,
     "level_count": 2,
@@ -121,14 +112,11 @@
       "All Hunters have a 38% chance of quickly performing 3 attacks."
     ]
   },
-  "primordial": {
-    "units_per_level": 2,
-    "level_count": 2,
-    "alliance_info": "Allied Primordial units spawn a rank [1, 2] Eidolon on death. Eidolons are ranged Primordial units that don't spawn Eidolons.",
-    "level_info": [
-      "Allied Primordial units spawn a rank 1 Eidolon on death. Eidolons are ranged Primordial units that don't spawn Eidolons.",
-      "Allied Primordial units spawn a rank 2 Eidolon on death. Eidolons are ranged Primordial units that don't spawn Eidolons."
-    ]
+  "poisoner": {
+    "units_per_level": 3,
+    "level_count": 1,
+    "alliance_info": "Attacks from Poisoners apply stacks of Poison. Enemies lose 7 Attack Speed per stack of Poison.",
+    "level_info": ["Attacks from Poisoners apply stacks of Poison. Enemies lose 7 Attack Speed per stack of Poison."]
   },
   "vigilant": {
     "units_per_level": 2,
@@ -147,6 +135,24 @@
       "All allied heroes have a 40% chance to deal an additional 4% of the target's Max Health as Pure Damage. This effect can only occur once every 0.5 seconds."
     ]
   },
+  "rogue": {
+    "units_per_level": 2,
+    "level_count": 2,
+    "alliance_info": "Allied Rogue units gain [20, 30]% evasion. Whenever a Rogue unit evades an attack, it gains +[10, 20] Attack Damage.",
+    "level_info": [
+      "Allied Rogue units gain 20% evasion. Whenever a Rogue unit evades an attack, it gains +10 Attack Damage.",
+      "Allied Rogue units gain 30% evasion. Whenever a Rogue unit evades an attack, it gains +20 Attack Damage."
+    ]
+  },
+  "fallen": {
+    "units_per_level": 3,
+    "level_count": 2,
+    "alliance_info": "When each Fallen unit first dies, allies within 2 cells are healed for 250 HP and gain +10% bonus damage to attacks and spells. A Fallen unit can revive [0, 1] times per combat, resurrecting with 40% health.",
+    "level_info": [
+      "When each Fallen unit first dies, allies within 2 cells are healed for 250 HP and gain +10% bonus damage to attacks and spells. A Fallen unit can revive 0 times per combat, resurrecting with 40% health.",
+      "When each Fallen unit first dies, allies within 2 cells are healed for 250 HP and gain +10% bonus damage to attacks and spells. A Fallen unit can revive 1 times per combat, resurrecting with 40% health."
+    ]
+  },
   "brawny": {
     "units_per_level": 2,
     "level_count": 2,
@@ -156,18 +162,12 @@
       "All Brawny units gain +10 maximum health for each kill by any of your team Brawny units throughout the game. Two-stars unint dain twice and Three-stars fourth more. Summons count at 0.25."
     ]
   },
-  "deadeye": {
-    "units_per_level": 1,
-    "level_count": 1,
-    "alliance_info": "All Deadeye units focus their attacks on the lowest-health enemy. Melee Deadeye units gain phasing movement.",
-    "level_info": ["All Deadeye units focus their attacks on the lowest-health enemy. Melee Deadeye units gain phasing movement."]
-  },
   "troll": {
     "units_per_level": 2,
     "level_count": 2,
-    "alliance_info": "All Troll units gain +[35, 65] Attack Speed and other Allies gain +[10, 30] Attack Speed",
+    "alliance_info": "All Troll units gain +[35, 65] Attack Speed and other Allies gain +[15, 30] Attack Speed",
     "level_info": [
-      "All Troll units gain +35 Attack Speed and other Allies gain +10 Attack Speed",
+      "All Troll units gain +35 Attack Speed and other Allies gain +15 Attack Speed",
       "All Troll units gain +65 Attack Speed and other Allies gain +30 Attack Speed"
     ]
   },
@@ -186,20 +186,20 @@
     "alliance_info": "All friendly healing is amplified by [25, 45]%.",
     "level_info": ["All friendly healing is amplified by 25%.", "All friendly healing is amplified by 45%."]
   },
-  "warlock": {
-    "units_per_level": 2,
-    "level_count": 3,
-    "alliance_info": "Whenever a Warlock casts a spell, they form a link with the Ally who has the lowest health for [2, 2.5, 3] seconds. When either linked hero deals damage, both units are healed [50, 60, 70]% of the damage dealt.",
-    "level_info": [
-      "Whenever a Warlock casts a spell, they form a link with the Ally who has the lowest health for 2 seconds. When either linked hero deals damage, both units are healed 50% of the damage dealt.",
-      "Whenever a Warlock casts a spell, they form a link with the Ally who has the lowest health for 2.5 seconds. When either linked hero deals damage, both units are healed 60% of the damage dealt.",
-      "Whenever a Warlock casts a spell, they form a link with the Ally who has the lowest health for 3 seconds. When either linked hero deals damage, both units are healed 70% of the damage dealt."
-    ]
-  },
   "champion": {
     "units_per_level": 1,
     "level_count": 1,
     "alliance_info": "Champions receive all Alliance bonuses. In addition, they gain 3% extra damage and 8% max health per active Alliance.",
     "level_info": ["Champions receive all Alliance bonuses. In addition, they gain 3% extra damage and 8% max health per active Alliance."]
+  },
+  "shaman": {
+    "units_per_level": 2,
+    "level_count": 3,
+    "alliance_info": "When combat starts, a [Small Wolf, Wildwing Hatchling, Black Dragon] is summoned to help.",
+    "level_info": [
+      "When combat starts, a Small Wolf is summoned to help.",
+      "When combat starts, a Wildwing Hatchling is summoned to help.",
+      "When combat starts, a Black Dragon is summoned to help."
+    ]
   }
 }
